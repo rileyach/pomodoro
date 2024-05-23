@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riley's Pomodoro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="align-items-center">
+        <h1 class="text-2xl text-center">Focus</h1>
+        <div class="btn-group">
+            <button class="start">START</button>
+            <button class="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+                    <path fill="white" d="M 25 2 A 2.0002 2.0002 0 1 0 25 6 C 35.517124 6 44 14.482876 44 25 C 44 35.517124 35.517124 44 25 44 C 14.482876 44 6 35.517124 6 25 C 6 19.524201 8.3080175 14.608106 12 11.144531 L 12 15 A 2.0002 2.0002 0 1 0 16 15 L 16 4 L 5 4 A 2.0002 2.0002 0 1 0 5 8 L 9.5253906 8 C 4.9067015 12.20948 2 18.272325 2 25 C 2 37.678876 12.321124 48 25 48 C 37.678876 48 48 37.678876 48 25 C 48 12.321124 37.678876 2 25 2 z"></path>
+                </svg>
+            </button>
+            <button class="pause">PAUSE</button>
+        </div>
+        <div class="clock">
+            <div class="mins">0</div>
+            <div>:</div>
+            <div class="secs">00</div>
+            <svg class="progress-ring" height="300" width="300">
+                <circle
+                    class="progress-ring__circle-1"
+                    stroke-width="10"
+                    fill="transparent"
+                    r="90"
+                    cx="150"
+                    cy="150"
+                />
+                <circle
+                    class="progress-ring__circle-2"
+                    stroke-width="10"
+                    fill="transparent"
+                    r="90"
+                    cx="150"
+                    cy="150"
+                />
+            </svg>
+        </div>
+
+        <form action=".">
+            <label for="focusTime">Focus Time</label>
+            <input type="number" value="1" id="focusTime" />
+            <label for="breakTime">Break Time</label>
+            <input type="number" value="1" id="breakTime" />
+            <button type="submit">Save Settings</button>
+        </form>
+    </div>
+
+    <script src="settings.js"></script>
+    <script src="timer.js"></script>
+    <script src="progress.js"></script>
+</body>
+</html>

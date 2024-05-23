@@ -1,0 +1,126 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-family: 'Lexend';
+}
+
+input {
+    transition: 0.5s ease-in-out;
+    margin: 15px 0;
+    font-size: 18px;
+    padding: 12px;
+    background: rgb(248, 245, 245);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    margin: 30px 0 100px 0;
+    gap: 10px;
+}
+
+button {
+    margin: 50px;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    /* transition: 0.5s ease-in-out; */
+}
+
+form {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 300px;
+    margin: 100px auto;
+    gap: 10px;
+}
+
+form button {
+    background: lightseagreen;
+    border-radius: 25px;
+    width: 100%;
+    margin: 5px 0;
+    color: white;
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+
+.start {
+    background: lightseagreen;
+    color: white;
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+
+.break {
+    background: rgb(28, 141, 185);
+}
+
+.reset {
+    background: rgb(27, 143, 137);
+    color: white;
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+
+.reset svg {
+    color: white;
+}
+
+.pause {
+    background: rgb(15, 141, 135);
+    border-radius: 25px;
+    padding: 5px 20px;
+    color: white;
+}
+
+.resume {
+    background: rgb(103, 5, 103);
+    color: white;
+}
+
+.clock {
+    padding: 3px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 30%;
+    font-size: 50px;
+}
+
+.progress-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.progress-ring__circle-1 {
+    transition: 0.5s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: rgb(230, 230, 230);
+    border-radius: 20px;
+}
+
+.progress-ring__circle-2 {
+    transition: 0.5s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: lightseagreen;
+    border-radius: 20px;
+}
+
+label {
+    font-weight: bold;
+}
